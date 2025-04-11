@@ -39,7 +39,7 @@ html, body
 
 .layout .main-panel
 {
-    margin-left:clamp(20ch, 15%, 15%);
+    margin-left:clamp(var(--left-panel-min-width), var(--left-panel-max-width), var(--left-panel-max-width));
 }
 
 ul
