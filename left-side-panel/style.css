@@ -1,0 +1,48 @@
+:root 
+{
+    /* Margins */
+    --left-panel-min-width:20ch;
+    --left-panel-max-width:15%;
+}
+
+*
+{
+    margin:0;
+    padding:0;
+}
+
+html, body
+{
+    height:100%;
+}
+
+.layout
+{
+    height:100%;
+}
+
+.layout .left-panel
+{
+    position:fixed;
+    top:0;
+    left:0;
+
+    min-width:var(--left-panel-min-width);
+    max-width:var(--left-panel-max-width);
+    width:100%;
+    height:100%;
+
+    overflow-y:auto;
+
+    border-right:1px solid black;
+}
+
+.layout .main-panel
+{
+    margin-left:clamp(20ch, 15%, 15%);
+}
+
+ul
+{
+    list-style-position: inside;
+}
